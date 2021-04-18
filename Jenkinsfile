@@ -6,13 +6,13 @@ node('master'){
         url: 'https://github.com/benjamaa-soufiene/theme-park-ride'
     }
    stage('Build'){
-          sh "mvn clean install"
+          C:\Program Files\Git\usr\bin\sh.exe "mvn clean install"
    }
 } stage('Build Docker Image'){
-     sh 'docker build -t theme-park-ride.git:1.0.0 .'
+       C:\Program Files\Git\usr\bin\sh.exe 'docker build -t theme-park-ride.git:1.0.0 .'
 
  stage('Deploy'){
-     sh 'docker run -d  -p 8081:8081 theme-park-ride.git:1.0.0 .'
+      C:\Program Files\Git\usr\bin\sh.exe 'docker run -d  -p 8081:8081 theme-park-ride.git:1.0.0 .'
   } 
 }
  
