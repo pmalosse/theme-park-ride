@@ -61,7 +61,8 @@
             <version>4.11</version>
         </dependency>
 	</dependencies>
-	<build>
+	<reporting>
+	   <build>
 	     <plugins>
                         <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -82,5 +83,6 @@
 			  </executions>
 			</plugin>
 	       </plugins>
-	</build>
+	 </build>
+    <reporting>
 </project>
