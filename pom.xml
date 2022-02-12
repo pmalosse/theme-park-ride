@@ -61,7 +61,8 @@
             <version>4.11</version>
         </dependency>
 	</dependencies>
-	<plugins>
+	<build>
+	     <plugins>
                         <plugin>
 			  <artifactId>maven-failsafe-plugin</artifactId>
 			  <executions>
@@ -73,5 +74,6 @@
 			    </execution>
 			  </executions>
 			</plugin>
-	 </plugins>
+	       </plugins>
+	</build>
 </project>
