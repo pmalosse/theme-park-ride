@@ -104,9 +104,7 @@ pipeline {
                         }
                     }
                 }
-            }
-        }
-        stage('Findbugs') {
+                stage('Findbugs') {
                     agent {
                         docker {
                             image 'maven:3.6.0-jdk-8-alpine'
@@ -122,6 +120,8 @@ pipeline {
                             recordIssues enabledForFailure: true, tool: spotBugs(pattern: '**/target/findbugsXml.xml')
                         }
                     }
+                }
+            }
         }
     }
 }
