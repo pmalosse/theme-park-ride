@@ -1,6 +1,3 @@
-/**
-* mon package 
-*/
 package com.exemple;
 
 import org.springframework.boot.CommandLineRunner;
